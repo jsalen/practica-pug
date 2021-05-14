@@ -1,0 +1,12 @@
+-var pageTitle= "Titulo Principal"
+-var userName= "Joseph"
+-var titles= ["Titulo Uno", "Titulo Dos", "Titulo Tres"]
+-var lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ex mi, gravida sit amet imperdiet vel, sodales a mi. Proin sit amet tellus nec nisl bibendum ornare nec at augue. Integer semper feugiat varius."
+-var footerLinks= ["Acerca", "Noticias", "Contacto"]
+
+mixin caja(imagen, titulo, contenido)
+  .caja
+    .caja__imagen: img(src="./images/"+imagen, alt="Una imagen")
+    .caja__contenido
+      h3= titulo
+      p= contenido

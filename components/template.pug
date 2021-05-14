@@ -1,0 +1,15 @@
+include config.pug
+include head.pug
+include header.pug
+include featured-article.pug
+include news.pug
+include footer.pug
+
+doctype html
+html
+  +headDocument(pageTitle)
+  body
+    +header(userName)
+    +featured
+    +news(titles)
+    +footer
